@@ -1,0 +1,8 @@
+#!/bin/sh
+
+git checkout --orphan clean-history
+git add -A
+git commit -S -m "Initial commit"
+git branch -D master
+git branch -m master
+git push --force --set-upstream origin master
